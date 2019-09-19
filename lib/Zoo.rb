@@ -17,7 +17,7 @@ class Zoo
     end
 
    def animals
-    Animal.all.find { |animal| animal.zoo == self }
+    Animal.all.select { |animal| animal.zoo == self }
    end
 
     def self.find_by_location(my_location)
